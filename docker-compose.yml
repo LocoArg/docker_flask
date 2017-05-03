@@ -1,0 +1,16 @@
+version: "2"
+services:
+  python:
+    image: python/flask:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - d:/Archivos/VM/docker/Flask/docker_flask:/home/emiliano/work
+    links:
+      - base_datos
+    tty: true
+  base_datos:
+    image: tutum/mongodb:3.2
+    ports:
+      - "26017:27017"
+      - "25017:28017"
