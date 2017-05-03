@@ -10,7 +10,7 @@ services:
       - base_datos
     tty: true
   base_datos:
-    image: tutum/mongodb:3.2
+    image: mongo:3.4.4
     ports:
       - "26017:27017"
       - "25017:28017"
