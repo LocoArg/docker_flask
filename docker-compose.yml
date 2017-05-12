@@ -4,6 +4,7 @@ services:
     image: python/flask:latest
     ports:
       - "5000:5000"
+      - "2222:22"
     volumes:
       - d:/Archivos/VM/docker/Flask/docker_flask:/home/emiliano/work
     links:
@@ -14,3 +15,4 @@ services:
     ports:
       - "26017:27017"
       - "25017:28017"
+      - "2223:22"
