@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - d:/Archivos/VM/docker/Flask/docker_flask:/home/emiliano/work
+      - /Users/emiliano/Documents/docker_flask:/home/emiliano/work
     links:
       - base_datos
     tty: true
