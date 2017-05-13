@@ -83,7 +83,7 @@ RUN cd /usr/local/bin \
 	&& ln -s python3 python \
 	&& ln -s python3-config python-config
 
-RUN pip3 install Flask pymongo flask-mongoengine 
+RUN pip3 install Flask pymongo flask-mongoengine passlib
 
 ENV SHELL /bin/bash
 ENV NB_USER emiliano
